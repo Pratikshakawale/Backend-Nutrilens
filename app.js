@@ -17,8 +17,6 @@ app.use(checkAuth);
 
 
 app.use("/api/auth/", require("./routes/auth"));
-app.use("/api/admin/", require("./routes/admin"));
-app.use("/api/user/request/", require("./routes/user"))
 
 // db.end();
 
