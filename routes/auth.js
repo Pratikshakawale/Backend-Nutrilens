@@ -81,7 +81,7 @@ router.post("/signup", redirectAuth,
             });
         } catch (error) {
             console.log(error)
-            return res.status(500).json({ msg: error })
+            res.status(500).json({ msg: error })
         }
     }
 )
