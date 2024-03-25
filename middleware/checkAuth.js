@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 const connectToMongo = require('../db');
 const JWT_SECRET = process.env.JWT_SECRET
-connectToMongo()
+await connectToMongo()
 
 
 const checkAuth = async (req, res, next) => {
