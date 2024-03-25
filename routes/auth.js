@@ -9,7 +9,7 @@ const saltRounds = 10;
 const  Users = require("../models/Users");
 const connectToMongo = require('../db');
 
-await connectToMongo()
+connectToMongo()
 
 const redirectAuth = (req, res, next) => {
     if (req["x-email"]) {
