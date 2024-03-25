@@ -6,7 +6,9 @@ const router = express.Router()
 const jwt = require('jsonwebtoken');
 const JWT_SECRET = process.env.JWT_SECRET
 const saltRounds = 10;
-const  Users = require("../models/Users")
+const  Users = require("../models/Users");
+const connectToMongo = require('../db');
+
 connectToMongo()
 
 const redirectAuth = (req, res, next) => {
