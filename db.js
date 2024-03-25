@@ -3,11 +3,8 @@ const mongoose = require("mongoose");
 const mongoURI = process.env.MONGODB_URI
 
 const connectToMongo = async ()=>{
-    mongoose.connect(mongoURI,(err)=>{
-        if(!err){
-            console.log("Connected to MongoDB server")
-        }
-    })
+    await mongoose.connect(mongoURI
+    )
 }
 mongoose.set('strictQuery', true)
 module.exports = connectToMongo;
