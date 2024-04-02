@@ -17,7 +17,7 @@ app.use(checkAuth);
 
 
 app.use("/api/auth/", require("./routes/auth"));
-
+app.use("/api/profile/", require("./routes/profile"));
 // db.end();
 
 app.listen(port, () => {
